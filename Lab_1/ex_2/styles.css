@@ -1,0 +1,50 @@
+/* External styles for contact form (no classes used) */
+body {
+  font-family: Arial, sans-serif;
+  background: #96f676;
+  color: #fff;
+  padding: 24px;
+}
+
+/* style the first direct div inside body as the container */
+body > div {
+  max-width: 600px;
+  margin: 45px auto;
+  background: #78741a;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 97%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #8b2828;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  background: #e2824a;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+h1 { margin-top: 0; }

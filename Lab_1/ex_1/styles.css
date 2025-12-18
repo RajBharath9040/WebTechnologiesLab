@@ -1,0 +1,37 @@
+/* Basic styles for the marksheet table */
+body {
+	font-family: Arial, sans-serif;
+	padding: 24px;
+	background: #000000;
+	color: #222;
+}
+
+.marksheet {
+	width: 100%;
+	max-width: 800px;
+	border-collapse: collapse;
+	margin-top: 40px;
+	background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marksheet th,
+.marksheet td {
+	border: 1px solid #ddd;
+	padding: 8px 10px;
+	text-align: left;
+}
+
+.marksheet thead th {
+	background: #4a90e2;
+	color: #fff;
+	font-weight: 600;
+}
+
+.marksheet tbody tr:nth-child(even) {
+	background: #f3f8ff;
+}
+
+h1 { margin: 0; color:#fff; text-align: center;}
+

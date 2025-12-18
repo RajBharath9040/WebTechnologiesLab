@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 320px;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 7px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 8px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <img src="vit_logo.png" alt="VIT Logo">
+        <h2>Registration Form</h2>
+
+        <form onsubmit="return validateForm()">
+
+            <input type="text" id="name" placeholder="Name"><br>
+            <input type="text" id="regno" placeholder="Register Number"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <input type="text" id="phone" placeholder="Phone Number"><br>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

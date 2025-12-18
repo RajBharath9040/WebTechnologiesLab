@@ -1,0 +1,23 @@
+:root{
+	--bg:#f9f9f9;
+	--card:#eff1f3;
+	--accent:#a8ecc6;
+	--text:#06c0f4;
+	--muted:#b3bdc0;
+}
+
+*{box-sizing:border-box}
+
+body{
+	margin:0;
+	font-family:Arial,Helvetica,sans-serif;
+	background:#f7e6e6;
+	color:#0d0e0d;
+}
+header{background:#aff4ec;padding:32px 12px;text-align:center;color:#0a0a0a}
+main{max-width:800px;margin:20px auto;padding:0 12px}
+section{background:#8ddcdc;padding:14px;border-radius:6px;margin-bottom:12px;border:1px solid #fde6e6}
+h1{margin:0;font-size:1.6rem}
+h2{margin:0 0 8px}
+ul{margin:0;padding-left:1.2rem}
+footer{text-align:center;padding:12px;color:#080808}
