@@ -1,0 +1,24 @@
+/* Page Background and Layout */
+body {
+    background: linear-gradient(45deg, #8ce3f5, #62b6ee, #9cf0e3);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Canvas Styling */
+.page-wrapper {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(62, 58, 58, 0.8);
+}
+
+canvas {
+    background-color: #faf1ed; /* Dark canvas background */
+    border: 2px solid #423a3a;
+    border-radius: 10px;
+    display: block;
+}
