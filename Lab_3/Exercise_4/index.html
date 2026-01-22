@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActivityMonitor Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>User Activity Monitor</h1>
+            <div class="controls">
+                <button id="export-btn" class="btn-secondary">Export Log</button>
+                <button id="reset-btn" class="btn-danger">Clear Data</button>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <section class="interaction-area">
+                <div class="monitor-card">
+                    <h3>Interactive Testing Zone</h3>
+                    <p>Click, type, or switch focus to see the monitor in action.</p>
+                    <input type="text" id="test-input" placeholder="Type something here...">
+                    <div class="click-zone">
+                        <button class="test-btn">Button A</button>
+                        <button class="test-btn">Button B</button>
+                    </div>
+                </div>
+                <div id="warning-box" class="warning-box hidden">
+                    ⚠️ Suspicious Activity Detected: Excessive Clicking!
+                </div>
+            </section>
+
+            <aside class="log-panel">
+                <h3>Live Activity Feed</h3>
+                <div id="log-container" class="log-container">
+                    </div>
+            </aside>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

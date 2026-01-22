@@ -1,0 +1,91 @@
+:root {
+    --primary: #4f46e5;
+    --error: #ef4444;
+    --text: #1f2937;
+    --bg: #f3f4f6;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.survey-card {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+header h1 { margin: 0 0 20px 0; font-size: 24px; }
+
+/* Progress Bar */
+.progress-container {
+    background: #e5e7eb;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: var(--primary);
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+#progress-text { font-size: 12px; color: #6b7280; margin-bottom: 30px; }
+
+/* Questions */
+.question-block {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #f3f4f6;
+    transition: all 0.2s;
+}
+
+.main-label { display: block; font-weight: 600; margin-bottom: 12px; }
+.req { color: var(--error); }
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.option-item { margin-bottom: 8px; display: flex; align-items: center; }
+.option-item input { margin-right: 10px; cursor: pointer; }
+
+/* Error States */
+.has-error { border-color: var(--error); background-color: #fef2f2; }
+.error-message {
+    color: var(--error);
+    font-size: 13px;
+    margin-top: 8px;
+    height: 15px;
+}
+
+/* Button */
+.submit-btn, #submit-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+#submit-btn:hover { opacity: 0.9; }

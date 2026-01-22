@@ -1,0 +1,26 @@
+body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
+.container { max-width: 900px; margin: auto; }
+.shop-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+.card, .cart-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover { background: #0056b3; }
+#summary { margin-top: 20px; font-size: 1.1rem; }

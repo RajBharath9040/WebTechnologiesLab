@@ -1,0 +1,35 @@
+:root {
+    --primary: #4338ca;
+    --bg: #f8fafc;
+    --border: #e2e8f0;
+}
+
+body { font-family: sans-serif; background: var(--bg); display: flex; justify-content: center; padding: 40px; }
+.workflow-container { background: white; width: 500px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+/* Progress Header */
+.progress-wrapper { margin-bottom: 30px; position: relative; }
+.steps-indicators { display: flex; justify-content: space-between; position: relative; z-index: 2; }
+.step { width: 30px; height: 30px; background: white; border: 2px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: 0.3s; }
+.step.active { border-color: var(--primary); background: var(--primary); color: white; }
+
+.progress-track { position: absolute; top: 15px; left: 0; width: 100%; height: 2px; background: var(--border); z-index: 1; }
+#progress-bar { height: 100%; width: 0%; background: var(--primary); transition: 0.3s; }
+
+/* Stage Management */
+.stage { display: none; }
+.stage.active { display: block; animation: fadeIn 0.4s; }
+
+.field { margin-bottom: 20px; }
+.field label { display: block; margin-bottom: 5px; font-weight: 600; }
+input, select { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px; box-sizing: border-box; }
+input.error { border-color: #ef4444; background: #fef2f2; }
+
+/* Nav Buttons */
+.nav-buttons { display: flex; justify-content: space-between; margin-top: 30px; }
+button { padding: 10px 20px; border-radius: 6px; cursor: pointer; border: none; font-weight: 600; }
+#next-btn, #submit-btn { background: var(--primary); color: white; margin-left: auto; }
+#prev-btn { background: #cbd5e1; }
+.hidden { display: none; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
