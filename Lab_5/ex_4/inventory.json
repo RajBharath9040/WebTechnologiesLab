@@ -1,0 +1,23 @@
+[
+    {
+        "id": "P001",
+        "name": "Wireless Keyboard",
+        "category": "Electronics",
+        "price": 45.99,
+        "stock": 12
+    },
+    {
+        "id": "P002",
+        "name": "Gaming Mouse",
+        "category": "Electronics",
+        "price": 29.50,
+        "stock": 3
+    },
+    {
+        "id": "P003",
+        "name": "Office Chair",
+        "category": "Furniture",
+        "price": 150.00,
+        "stock": 8
+    }
+]
