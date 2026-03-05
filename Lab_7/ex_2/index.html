@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Book Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Finder</h1>
+
+        <div class="controls">
+            <input type="text" id="searchTitle" placeholder="Search by title..." onkeyup="searchBooks()">
+            
+            <div class="buttons">
+                <button onclick="filterCategory('Programming')">Programming</button>
+                <button onclick="filterCategory('Fiction')">Fiction</button>
+                <button onclick="sortBy('price')">Sort by Price</button>
+                <button onclick="sortBy('rating')">Sort by Rating</button>
+                <button onclick="getTopRated()" class="btn-top">Top Rated</button>
+            </div>
+        </div>
+
+        <div id="bookResults" class="book-grid"></div>
+        
+        <div class="pagination">
+            <button id="loadMore" onclick="loadMore()">Load More (Pagination)</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

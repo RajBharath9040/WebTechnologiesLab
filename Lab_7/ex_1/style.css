@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.app-wrapper {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header { text-align: center; margin-bottom: 20px; }
+
+.form-section input, .form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+button:hover { opacity: 0.8; }
+
+.form-section button { background-color: #007bff; color: white; width: 100%; }
+
+.notes-grid { margin-top: 20px; }
+
+.note-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #fafafa;
+}
+
+.note-card h3 { margin: 0; color: #333; }
+.note-card .subject-tag { color: #666; font-size: 0.8rem; text-transform: uppercase; }
+
+.btn-edit { background: #ffc107; margin-right: 5px; }
+.btn-delete { background: #dc3545; color: white; }
