@@ -1,0 +1,32 @@
+/* Exercise1.css */
+
+.profile-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 350px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.profile-heading {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.profile-details p {
+  line-height: 1.6;
+  margin: 12px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.profile-details strong {
+  color: #222;
+  margin-right: 8px;
+}

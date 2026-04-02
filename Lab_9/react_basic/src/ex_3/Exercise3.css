@@ -1,0 +1,64 @@
+/* Exercise3.css */
+
+.counter-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 300px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container h2 {
+  margin-top: 0;
+  color: #374151;
+  font-size: 24px;
+}
+
+.count-display {
+  font-size: 64px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 20px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  color: white;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.increment-btn {
+  background-color: #10b981; /* Green */
+}
+
+.increment-btn:hover {
+  background-color: #059669;
+}
+
+.decrement-btn {
+  background-color: #ef4444; /* Red */
+}
+
+.decrement-btn:hover {
+  background-color: #dc2626;
+}
